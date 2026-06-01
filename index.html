@@ -23,7 +23,7 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
-<body class="bg-brand-bg-primary text-brand-text font-body relative leading-loose font-light">
+<body class="bg-brand-bg-primary text-brand-text font-body relative leading-loose font-light pb-24 md:pb-0">
 
     <!-- Global Noise Overlay for Texture -->
     <div class="noise-overlay fixed"></div>
@@ -36,7 +36,7 @@
             </a>
 
             <!-- Desktop Menu -->
-            <nav class="hidden lg:flex items-center gap-10 font-medium text-sm tracking-wide z-50">
+            <nav class="hidden lg:flex items-center gap-10 font-semibold text-[15px] tracking-wide text-brand-text/90 z-50">
                 <a href="#about" class="hover:text-brand-gold transition-colors">About</a>
                 <a href="#creations" class="hover:text-brand-gold transition-colors">Creations</a>
                 <a href="#portfolio" class="hover:text-brand-gold transition-colors">Portfolio</a>
@@ -71,8 +71,16 @@
     </header>
 
     <!-- Floating Sticky CTA -->
+    <div class="sticky-bottom-bar md:hidden fixed bottom-0 left-0 w-full z-[100] bg-white border-t border-brand-gold/20 p-4 shadow-[0_-10px_20px_rgba(0,0,0,0.05)]">
+        <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D"
+            target="_blank" class="btn-whatsapp w-full flex justify-center text-base py-3">
+            <i class="ph-fill ph-whatsapp-logo text-2xl"></i> Chat to Order
+        </a>
+    </div>
+    
+    <!-- Floating Sticky CTA (Desktop) -->
     <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D"
-        target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        target="_blank" class="floating-whatsapp hidden md:flex" aria-label="Chat on WhatsApp">
         <i class="ph-fill ph-whatsapp-logo"></i>
     </a>
 
@@ -87,18 +95,21 @@
                         Premium Personalized Gifting
                     </div>
                     <h1
-                        class="font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8 text-balance text-brand-text">
-                        Thoughtful Gifts.<br>
-                        <span class="text-brand-rose">Crafted Just For You.</span>
+                        class="font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-balance text-brand-text">
+                        Surprise Your Loved Ones.<br>
+                        <span class="text-brand-rose">With a Handcrafted Gift.</span>
                     </h1>
+                    <p class="text-brand-text/80 text-lg mb-8 max-w-lg leading-relaxed">
+                        Hassle-free, premium personalized gifting tailored to your exact vision and budget. 
+                    </p>
 
                     <div class="flex flex-wrap gap-5 w-full sm:w-auto mb-10">
                         <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D"
-                            target="_blank" class="btn-whatsapp w-full sm:w-auto text-base">
-                            <i class="ph-fill ph-whatsapp-logo text-2xl"></i> Create My Gift
+                            target="_blank" class="btn-whatsapp w-full sm:w-auto text-base px-8">
+                            <i class="ph-fill ph-whatsapp-logo text-2xl"></i> Order Your Gift Now
                         </a>
-                        <a href="#portfolio" class="btn-outline w-full sm:w-auto text-base">
-                            View Portfolio
+                        <a href="#creations" class="btn-outline w-full sm:w-auto text-base px-8">
+                            See Best Sellers
                         </a>
                     </div>
 
@@ -168,16 +179,14 @@
             </div>
         </div>
     </section>
-
     <!-- SECTION 4: FEATURED CREATIONS -->
     <section id="creations"
         class="py-24 px-6 relative z-10 bg-brand-bg-primary bg-gradient-to-b from-white/40 to-transparent">
         <div class="container mx-auto max-w-7xl">
             <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 fade-in">
                 <div>
-                    <span class="text-brand-gold font-medium tracking-[0.2em] uppercase text-xs mb-4 block">Our
-                        Expertise</span>
-                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-brand-text">Featured Creations</h2>
+                    <span class="text-brand-gold font-medium tracking-[0.2em] uppercase text-xs mb-4 block">Most Loved</span>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-brand-text">Our Best-Selling Custom Gifts</h2>
                 </div>
                 <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D"
                     target="_blank"
@@ -202,9 +211,12 @@
                                     class="ph-bold ph-arrow-right"></i></span>
                         </div>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center mt-4">
                         <h3 class="font-heading text-2xl font-bold mb-2">Custom Hampers</h3>
-                        <p class="text-sm text-brand-text/60 font-light">Curated collections of treats & keepsakes.</p>
+                        <p class="text-sm text-brand-text/60 font-light mb-4">Curated collections of treats & keepsakes.</p>
+                        <span class="inline-flex items-center gap-2 text-brand-rose font-medium text-sm group-hover:text-brand-gold transition-colors uppercase tracking-widest">
+                            Order Custom Hamper <i class="ph-bold ph-arrow-right"></i>
+                        </span>
                     </div>
                 </div>
 
@@ -224,9 +236,12 @@
                                     class="ph-bold ph-arrow-right"></i></span>
                         </div>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center mt-4">
                         <h3 class="font-heading text-2xl font-bold mb-2">Gift Boxes</h3>
-                        <p class="text-sm text-brand-text/60 font-light">Elegant boxed surprises tailored to them.</p>
+                        <p class="text-sm text-brand-text/60 font-light mb-4">Elegant boxed surprises tailored to them.</p>
+                        <span class="inline-flex items-center gap-2 text-brand-rose font-medium text-sm group-hover:text-brand-gold transition-colors uppercase tracking-widest">
+                            Order Gift Box <i class="ph-bold ph-arrow-right"></i>
+                        </span>
                     </div>
                 </div>
 
@@ -246,10 +261,12 @@
                                     class="ph-bold ph-arrow-right"></i></span>
                         </div>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center mt-4">
                         <h3 class="font-heading text-2xl font-bold mb-2">Artisan Bouquets</h3>
-                        <p class="text-sm text-brand-text/60 font-light">Stunning arrangements using premium materials.
-                        </p>
+                        <p class="text-sm text-brand-text/60 font-light mb-4">Stunning arrangements using premium materials.</p>
+                        <span class="inline-flex items-center gap-2 text-brand-rose font-medium text-sm group-hover:text-brand-gold transition-colors uppercase tracking-widest">
+                            Order Artisan Bouquet <i class="ph-bold ph-arrow-right"></i>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -339,6 +356,8 @@
         </div>
     </section>
 
+
+
     <!-- SECTION 6: INSTAGRAM SECTION -->
     <section id="instagram"
         class="py-24 px-6 relative z-10 bg-brand-bg-primary bg-gradient-to-b from-white/40 to-transparent">
@@ -403,13 +422,13 @@
         </div>
 
         <div class="container mx-auto px-6 relative z-10 fade-in">
-            <h2 class="font-heading text-5xl md:text-6xl font-bold mb-8">Ready To Create Something Special?</h2>
-            <p class="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-12 text-balance font-light leading-loose">
-                Tell us your idea, budget, and occasion. We'll craft something unforgettable.
+            <h2 class="font-heading text-5xl md:text-6xl font-bold mb-6">Don't Wait! Order Your Custom Gift Today.</h2>
+            <p class="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 text-balance font-light leading-loose">
+                Share your occasion and budget, and let us handle the rest. Secure your delivery date now.
             </p>
             <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D"
                 target="_blank" class="btn-whatsapp px-12 py-5 text-lg shadow-2xl hover:scale-105">
-                <i class="ph-fill ph-whatsapp-logo text-3xl"></i> Chat On WhatsApp
+                <i class="ph-fill ph-whatsapp-logo text-3xl"></i> Book on WhatsApp
             </a>
 
             <!-- Trust text -->
