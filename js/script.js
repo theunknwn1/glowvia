@@ -54,3 +54,38 @@ document.addEventListener('DOMContentLoaded', () => {
     yearElement.textContent = new Date().getFullYear();
   }
 });
+
+window.copyOrderTemplateAndOpenIG = function(event) {
+  event.preventDefault();
+  const template = `Hi Glowvia Lane 🌷\n\nI would like to place an order.\n\nOccasion:\nBudget:\nDelivery Date:\nGift Type:\nCustomization Needed:\n\nPlease share available options. Thank you 💝`;
+  
+  const originalHtml = event.currentTarget.innerHTML;
+  event.currentTarget.innerHTML = `<i class="ph-bold ph-check text-2xl group-hover:drop-shadow-[0_0_8px_rgba(200,165,106,0.4)] transition-all duration-300"></i> Copied & Opening...`;
+  
+  setTimeout(() => {
+    event.currentTarget.innerHTML = originalHtml;
+  }, 3000);
+
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(template).then(() => {
+      setTimeout(() => window.open('https://www.instagram.com/glowvia.lane/', '_blank'), 500);
+    }).catch(() => {
+      window.open('https://www.instagram.com/glowvia.lane/', '_blank');
+    });
+  } else {
+    // Fallback
+    const textArea = document.createElement("textarea");
+    textArea.value = template;
+    textArea.style.position = "fixed";
+    textArea.style.left = "-999999px";
+    textArea.style.top = "-999999px";
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+      document.execCommand('copy');
+    } catch (err) {}
+    textArea.remove();
+    setTimeout(() => window.open('https://www.instagram.com/glowvia.lane/', '_blank'), 500);
+  }
+};
