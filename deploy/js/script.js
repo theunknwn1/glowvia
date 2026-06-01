@@ -20,16 +20,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Sticky Navbar Effect
+  // Sticky & Smart Navbar Effect
   const navbar = document.getElementById('navbar');
   if (navbar) {
+    let lastScrollY = window.scrollY;
+    
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 20) {
+      const currentScrollY = window.scrollY;
+      
+      // Scrolled styling (blur + background)
+      if (currentScrollY > 20) {
         navbar.classList.add('scrolled');
       } else {
         navbar.classList.remove('scrolled');
       }
-    });
+      
+      // Hide on scroll down, reveal on scroll up
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        navbar.classList.add('-translate-y-full');
+      } else {
+        navbar.classList.remove('-translate-y-full');
+      }
+      
+      lastScrollY = currentScrollY;
+    }, { passive: true });
   }
 
   // Scroll Reveal Animation
