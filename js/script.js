@@ -5,14 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
   
   if (mobileMenuBtn && mobileMenu) {
     mobileMenuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('opacity-0');
+      mobileMenu.classList.toggle('invisible');
+      mobileMenu.classList.toggle('pointer-events-none');
+      mobileMenu.classList.toggle('-translate-y-4');
     });
 
     // Close mobile menu on link click
     const mobileLinks = mobileMenu.querySelectorAll('a');
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.add('opacity-0', 'invisible', 'pointer-events-none', '-translate-y-4');
       });
     });
   }
