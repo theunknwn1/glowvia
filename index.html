@@ -76,7 +76,7 @@
         </div>
 
         <!-- Mobile Menu (Hidden by default) -->
-        <div id="mobile-menu" class="hidden absolute top-0 left-0 w-full h-screen bg-brand-bg-primary/98 backdrop-blur-xl z-40 flex flex-col items-center justify-center gap-8 text-xl font-medium shadow-2xl border-b border-brand-gold/10">
+        <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-brand-bg-primary/98 backdrop-blur-xl z-40 flex flex-col items-center justify-center gap-8 text-xl font-medium shadow-2xl border-b border-brand-gold/10">
             <a href="#about" class="hover:text-brand-gold transition-colors">About</a>
             <a href="#creations" class="hover:text-brand-gold transition-colors">Creations</a>
             <a href="#portfolio" class="hover:text-brand-gold transition-colors">Portfolio</a>
@@ -181,7 +181,7 @@
                 </a>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
                 <!-- Custom Hampers -->
                 <div class="group fade-in cursor-pointer hover:-translate-y-2 transition-all duration-500" onclick="window.open('https://wa.me/919092922385')">
                     <div class="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-md group-hover:shadow-2xl mb-6 transition-all duration-500">
