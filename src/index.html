@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowvia Lane | Personalized Gifts & Hampers</title>
+    <meta name="description" content="Personalized hampers, gift boxes and bouquets designed around your vision, budget and occasion. Crafted just for you by Glowvia Lane.">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    
+    <!-- Tailwind CSS (CDN for zero-build deployment) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-bg-primary': '#F9F3EE',
+                        'brand-bg-secondary': '#FFF8F3',
+                        'brand-text': '#2B2B2B',
+                        'brand-gold': '#C8A56A',
+                        'brand-rose': '#8E4A5B',
+                        'brand-sage': '#A9B4A2',
+                    },
+                    fontFamily: {
+                        'heading': ['"Playfair Display"', 'serif'],
+                        'body': ['"Poppins"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Phosphor Icons for elegant UI icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-brand-bg-primary text-brand-text font-body relative leading-loose font-light">
+
+    <!-- Global Noise Overlay for Texture -->
+    <div class="noise-overlay fixed"></div>
+
+    <!-- SECTION 1: NAVBAR -->
+    <header id="navbar" class="fixed w-full top-0 z-50 py-5 transition-all duration-300">
+        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2 z-50">
+                <img src="logo.png" alt="Glowvia Lane" class="h-10 md:h-12 w-auto object-contain drop-shadow-sm">
+            </a>
+            
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center gap-10 font-medium text-sm tracking-wide z-50">
+                <a href="#home" class="hover:text-brand-gold transition-colors">Home</a>
+                <a href="#our-story" class="hover:text-brand-gold transition-colors">Our Story</a>
+                <a href="#portfolio" class="hover:text-brand-gold transition-colors">Portfolio</a>
+                <a href="#reviews" class="hover:text-brand-gold transition-colors">Reviews</a>
+                <a href="#faq" class="hover:text-brand-gold transition-colors">FAQ</a>
+            </nav>
+
+            <div class="hidden lg:block z-50">
+                <a href="https://wa.me/919092922385" target="_blank" rel="noopener noreferrer" class="btn-whatsapp px-8 py-3 text-sm">
+                    <i class="ph-fill ph-whatsapp-logo text-xl"></i> WhatsApp Us
+                </a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button id="mobile-menu-btn" class="lg:hidden text-2xl z-50 p-2 text-brand-text">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden absolute top-0 left-0 w-full h-screen bg-brand-bg-primary/98 backdrop-blur-xl z-40 flex flex-col items-center justify-center gap-8 text-xl font-medium shadow-2xl border-b border-brand-gold/10">
+            <a href="#home" class="hover:text-brand-gold transition-colors">Home</a>
+            <a href="#our-story" class="hover:text-brand-gold transition-colors">Our Story</a>
+            <a href="#portfolio" class="hover:text-brand-gold transition-colors">Portfolio</a>
+            <a href="#reviews" class="hover:text-brand-gold transition-colors">Reviews</a>
+            <a href="#faq" class="hover:text-brand-gold transition-colors">FAQ</a>
+            <a href="https://wa.me/919092922385" target="_blank" class="btn-whatsapp mt-8 px-10 py-4 text-base">
+                <i class="ph-fill ph-whatsapp-logo text-2xl"></i> Chat on WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- Floating Sticky CTA -->
+    <a href="https://wa.me/919092922385" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i class="ph-fill ph-whatsapp-logo"></i>
+    </a>
+
+    <!-- SECTION 2: HERO SECTION -->
+    <section id="home" class="pt-40 pb-24 md:pt-48 md:pb-32 px-6 relative z-10 overflow-hidden">
+        <div class="container mx-auto max-w-7xl">
+            <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                <div class="w-full lg:w-1/2 flex flex-col items-start fade-in">
+                    <div class="inline-block mb-8 text-brand-gold font-medium text-xs tracking-[0.2em] uppercase">
+                        Premium Personalized Gifting
+                    </div>
+                    <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8 text-balance text-brand-text">
+                        Thoughtful Gifts.<br>
+                        <span class="text-brand-rose">Crafted Just For You.</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-brand-text/70 mb-12 max-w-lg leading-relaxed text-balance font-light">
+                        Personalized hampers, gift boxes and bouquets designed around your vision, budget and occasion. Make them feel truly special.
+                    </p>
+                    <div class="flex flex-wrap gap-5 w-full sm:w-auto">
+                        <a href="https://wa.me/919092922385" target="_blank" class="btn-whatsapp w-full sm:w-auto text-base">
+                            <i class="ph-fill ph-whatsapp-logo text-2xl"></i> Create My Gift
+                        </a>
+                        <a href="#portfolio" class="btn-outline w-full sm:w-auto text-base">
+                            View Our Work
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="w-full lg:w-1/2 relative fade-in" style="transition-delay: 200ms;">
+                    <!-- Decorative Background element -->
+                    <div class="absolute -inset-6 bg-brand-gold/5 rounded-[2.5rem] transform rotate-2"></div>
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5]">
+                        <img src="images/IMG_20260509_144056.jpg" alt="Premium Rose Bouquet by Glowvia Lane" class="img-cover transform hover:scale-105 transition-transform duration-1000 ease-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-black/5 to-transparent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: TRUST BAR -->
+    <section class="py-12 bg-brand-bg-secondary border-y border-brand-gold/10 relative z-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center md:justify-between items-center gap-10 text-center sm:text-left">
+                <div class="flex items-center gap-4 fade-in">
+                    <i class="ph-light ph-star text-3xl text-brand-gold"></i>
+                    <span class="font-medium text-sm tracking-wide uppercase text-brand-text/80">100% Customized</span>
+                </div>
+                <div class="flex items-center gap-4 fade-in" style="transition-delay: 100ms;">
+                    <i class="ph-light ph-gift text-3xl text-brand-rose"></i>
+                    <span class="font-medium text-sm tracking-wide uppercase text-brand-text/80">Premium Packaging</span>
+                </div>
+                <div class="flex items-center gap-4 fade-in" style="transition-delay: 200ms;">
+                    <i class="ph-light ph-hand-heart text-3xl text-brand-sage"></i>
+                    <span class="font-medium text-sm tracking-wide uppercase text-brand-text/80">Handcrafted</span>
+                </div>
+                <div class="flex items-center gap-4 fade-in" style="transition-delay: 300ms;">
+                    <i class="ph-light ph-truck text-3xl text-brand-gold"></i>
+                    <span class="font-medium text-sm tracking-wide uppercase text-brand-text/80">Pan India Delivery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: OUR STORY -->
+    <section id="our-story" class="py-32 px-6 relative z-10">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col lg:flex-row-reverse items-center gap-20">
+                <div class="w-full lg:w-1/2 fade-in">
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold mb-8 text-brand-text">The <span class="text-brand-rose">Glowvia Lane</span> Story</h2>
+                    <p class="text-brand-text/70 mb-6 leading-loose font-light">
+                        We believe that a gift is more than just an item—it's an emotion, a memory, and a meaningful gesture. Glowvia Lane was born from the desire to bring back the lost art of thoughtful gifting.
+                    </p>
+                    <p class="text-brand-text/70 mb-10 leading-loose font-light">
+                        In a world of mass-produced products, we craft personalized experiences. Whether it’s an anniversary, a birthday, or a simple "thinking of you," our bespoke hampers and elegant bouquets are designed to perfectly reflect your feelings and fit your budget.
+                    </p>
+                    <a href="https://wa.me/919092922385" target="_blank" class="text-brand-gold font-medium uppercase tracking-widest text-xs hover:text-brand-rose transition-colors flex items-center gap-3">
+                        Talk to our designer <i class="ph ph-arrow-right text-lg"></i>
+                    </a>
+                </div>
+                <div class="w-full lg:w-1/2 fade-in relative">
+                    <div class="absolute -left-10 -top-10 w-40 h-40 bg-brand-sage/10 rounded-full blur-3xl"></div>
+                    <div class="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-square">
+                        <img src="images/Screenshot_2026-05-09-14-30-54-261_com.instagram.android-edit.jpg" alt="Beautiful personalized gift box" class="img-cover hover:scale-105 transition-transform duration-1000 ease-out">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: HOW IT WORKS -->
+    <section class="py-32 bg-brand-bg-secondary relative z-10">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-20 fade-in">
+                <span class="text-brand-gold font-medium tracking-[0.2em] uppercase text-xs mb-4 block">Simple Process</span>
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-brand-text">How It Works</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative">
+                <!-- Line connecting steps (desktop) -->
+                <div class="hidden lg:block absolute top-8 left-[12%] right-[12%] h-[1px] bg-brand-gold/20 z-0"></div>
+                
+                <!-- Step 1 -->
+                <div class="relative z-10 text-center fade-in" style="transition-delay: 0ms;">
+                    <div class="w-16 h-16 mx-auto bg-brand-bg-primary text-brand-rose rounded-full flex items-center justify-center mb-8 border border-brand-rose/20 shadow-sm relative z-10">
+                        <i class="ph-light ph-chat-circle-text text-3xl"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold mb-4">1. Share Idea</h3>
+                    <p class="text-sm text-brand-text/60 leading-relaxed font-light">Tell us the occasion, recipient, and preferences on WhatsApp.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="relative z-10 text-center fade-in" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 mx-auto bg-brand-bg-primary text-brand-gold rounded-full flex items-center justify-center mb-8 border border-brand-gold/20 shadow-sm relative z-10">
+                        <i class="ph-light ph-wallet text-3xl"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold mb-4">2. Set Budget</h3>
+                    <p class="text-sm text-brand-text/60 leading-relaxed font-light">We design beautiful options that maximize value within your range.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="relative z-10 text-center fade-in" style="transition-delay: 200ms;">
+                    <div class="w-16 h-16 mx-auto bg-brand-bg-primary text-brand-sage rounded-full flex items-center justify-center mb-8 border border-brand-sage/20 shadow-sm relative z-10">
+                        <i class="ph-light ph-check-circle text-3xl"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold mb-4">3. Approve</h3>
+                    <p class="text-sm text-brand-text/60 leading-relaxed font-light">Review our curation and suggest tweaks until it feels perfect.</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="relative z-10 text-center fade-in" style="transition-delay: 300ms;">
+                    <div class="w-16 h-16 mx-auto bg-brand-bg-primary text-brand-text rounded-full flex items-center justify-center mb-8 border border-brand-text/20 shadow-sm relative z-10">
+                        <i class="ph-light ph-gift text-3xl"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold mb-4">4. Deliver</h3>
+                    <p class="text-sm text-brand-text/60 leading-relaxed font-light">We lovingly handcraft your order and ensure safe delivery.</p>
+                </div>
+            </div>
+            
+            <div class="mt-20 text-center fade-in">
+                <a href="https://wa.me/919092922385" target="_blank" class="btn-whatsapp px-10 py-4">
+                    <i class="ph-fill ph-whatsapp-logo text-2xl"></i> Start Your Order Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: FEATURED CREATIONS -->
+    <section class="py-32 px-6 relative z-10">
+        <div class="container mx-auto max-w-7xl">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 fade-in">
+                <div>
+                    <span class="text-brand-gold font-medium tracking-[0.2em] uppercase text-xs mb-4 block">Our Expertise</span>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-brand-text">Featured Creations</h2>
+                </div>
+                <a href="https://wa.me/919092922385" target="_blank" class="hidden md:inline-flex text-brand-text font-medium uppercase tracking-widest text-xs hover:text-brand-gold transition-colors items-center gap-3">
+                    Request custom creation <i class="ph ph-arrow-right text-lg"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Custom Hampers -->
+                <div class="group fade-in cursor-pointer" onclick="window.open('https://wa.me/919092922385')">
+                    <div class="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-lg mb-6">
+                        <img src="images/IMG-20260323-WA0218.jpg" alt="Custom Hamper" class="img-cover group-hover:scale-110 transition-transform duration-1000 ease-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-text/80 via-brand-text/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                            <span class="text-white text-sm font-medium tracking-widest uppercase mb-2">Via WhatsApp</span>
+                            <span class="text-brand-gold flex items-center gap-2 font-medium">Order Similar <i class="ph-bold ph-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="font-heading text-2xl font-bold mb-2">Custom Hampers</h3>
+                        <p class="text-sm text-brand-text/60 font-light">Curated collections of treats, lifestyle items, and keepsakes.</p>
+                    </div>
+                </div>
+
+                <!-- Gift Boxes -->
+                <div class="group fade-in cursor-pointer" style="transition-delay: 100ms;" onclick="window.open('https://wa.me/919092922385')">
+                    <div class="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-lg mb-6">
+                        <img src="images/IMG_20260322_115018.png" alt="Gift Box" class="img-cover group-hover:scale-110 transition-transform duration-1000 ease-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-text/80 via-brand-text/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                            <span class="text-white text-sm font-medium tracking-widest uppercase mb-2">Via WhatsApp</span>
+                            <span class="text-brand-gold flex items-center gap-2 font-medium">Order Similar <i class="ph-bold ph-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="font-heading text-2xl font-bold mb-2">Gift Boxes</h3>
+                        <p class="text-sm text-brand-text/60 font-light">Elegant boxed surprises tailored to their unique personality.</p>
+                    </div>
+                </div>
+
+                <!-- Bouquets -->
+                <div class="group fade-in cursor-pointer" style="transition-delay: 200ms;" onclick="window.open('https://wa.me/919092922385')">
+                    <div class="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-lg mb-6">
+                        <img src="images/IMG-20260318-WA0038.jpg" alt="Premium Bouquet" class="img-cover group-hover:scale-110 transition-transform duration-1000 ease-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-text/80 via-brand-text/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                            <span class="text-white text-sm font-medium tracking-widest uppercase mb-2">Via WhatsApp</span>
+                            <span class="text-brand-gold flex items-center gap-2 font-medium">Order Similar <i class="ph-bold ph-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="font-heading text-2xl font-bold mb-2">Artisan Bouquets</h3>
+                        <p class="text-sm text-brand-text/60 font-light">Stunning arrangements using premium ribbons or fabrics.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center md:hidden fade-in">
+                <a href="https://wa.me/919092922385" target="_blank" class="text-brand-text font-medium uppercase tracking-widest text-xs hover:text-brand-gold transition-colors inline-flex items-center gap-3">
+                    Request custom creation <i class="ph ph-arrow-right text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: SHOP BY OCCASION -->
+    <section class="py-32 bg-brand-bg-secondary border-t border-brand-gold/5 relative z-10">
+        <div class="container mx-auto px-6 max-w-7xl text-center">
+            <h2 class="font-heading text-4xl md:text-5xl font-bold text-brand-text mb-6 fade-in">Shop By Occasion</h2>
+            <p class="text-brand-text/60 font-light max-w-2xl mx-auto mb-20 fade-in">Every milestone deserves a celebration tailored specifically to the moment and the person.</p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 md:gap-8 fade-in">
+                <!-- Occasion Cards -->
+                <a href="https://wa.me/919092922385" target="_blank" class="card-premium p-8 flex flex-col items-center justify-center gap-4 hover:-translate-y-2 group bg-white border-0 shadow-sm hover:shadow-xl">
+                    <i class="ph-light ph-cake text-4xl text-brand-rose group-hover:scale-110 transition-transform duration-500"></i>
+                    <span class="font-medium text-sm tracking-wide uppercase">Birthday</span>
+                </a>
+                <a href="https://wa.me/919092922385" target="_blank" class="card-premium p-8 flex flex-col items-center justify-center gap-4 hover:-translate-y-2 group bg-white border-0 shadow-sm hover:shadow-xl">
+                    <i class="ph-light ph-champagne text-4xl text-brand-gold group-hover:scale-110 transition-transform duration-500"></i>
+                    <span class="font-medium text-sm tracking-wide uppercase">Anniversary</span>
+                </a>
+                <a href="https://wa.me/919092922385" target="_blank" class="card-premium p-8 flex flex-col items-center justify-center gap-4 hover:-translate-y-2 group bg-white border-0 shadow-sm hover:shadow-xl">
+                    <i class="ph-light ph-diamond text-4xl text-brand-sage group-hover:scale-110 transition-transform duration-500"></i>
+                    <span class="font-medium text-sm tracking-wide uppercase">Proposal</span>
+                </a>
+                <a href="https://wa.me/919092922385" target="_blank" class="card-premium p-8 flex flex-col items-center justify-center gap-4 hover:-translate-y-2 group bg-white border-0 shadow-sm hover:shadow-xl">
+                    <i class="ph-light ph-church text-4xl text-brand-rose group-hover:scale-110 transition-transform duration-500"></i>
+                    <span class="font-medium text-sm tracking-wide uppercase">Wedding</span>
+                </a>
+                <a href="https://wa.me/919092922385" target="_blank" class="card-premium p-8 flex flex-col items-center justify-center gap-4 hover:-translate-y-2 group bg-white border-0 shadow-sm hover:shadow-xl">
+                    <i class="ph-light ph-baby text-4xl text-brand-gold group-hover:scale-110 transition-transform duration-500"></i>
+                    <span class="font-medium text-sm tracking-wide uppercase">Baby Shower</span>
+                </a>
+                <a href="https://wa.me/919092922385" target="_blank" class="card-premium p-8 flex flex-col items-center justify-center gap-4 hover:-translate-y-2 group bg-white border-0 shadow-sm hover:shadow-xl">
+                    <i class="ph-light ph-briefcase text-4xl text-brand-sage group-hover:scale-110 transition-transform duration-500"></i>
+                    <span class="font-medium text-sm tracking-wide uppercase">Corporate</span>
+                </a>
+                <a href="https://wa.me/919092922385" target="_blank" class="card-premium p-8 flex flex-col items-center justify-center gap-4 hover:-translate-y-2 group bg-white border-0 shadow-sm hover:shadow-xl">
+                    <i class="ph-light ph-users text-4xl text-brand-rose group-hover:scale-110 transition-transform duration-500"></i>
+                    <span class="font-medium text-sm tracking-wide uppercase">Friendship</span>
+                </a>
+                <a href="https://wa.me/919092922385" target="_blank" class="card-premium p-8 flex flex-col items-center justify-center gap-4 hover:-translate-y-2 group bg-white border-0 shadow-sm hover:shadow-xl">
+                    <i class="ph-light ph-graduation-cap text-4xl text-brand-gold group-hover:scale-110 transition-transform duration-500"></i>
+                    <span class="font-medium text-sm tracking-wide uppercase">Graduation</span>
+                </a>
+                <a href="https://wa.me/919092922385" target="_blank" class="card-premium p-8 flex flex-col items-center justify-center gap-4 hover:-translate-y-2 group bg-white border-0 shadow-sm hover:shadow-xl">
+                    <i class="ph-light ph-confetti text-4xl text-brand-sage group-hover:scale-110 transition-transform duration-500"></i>
+                    <span class="font-medium text-sm tracking-wide uppercase">Festive</span>
+                </a>
+                <a href="https://wa.me/919092922385" target="_blank" class="card-premium p-8 flex flex-col items-center justify-center gap-4 hover:-translate-y-2 group bg-white border-0 shadow-sm hover:shadow-xl">
+                    <i class="ph-light ph-hand-waving text-4xl text-brand-rose group-hover:scale-110 transition-transform duration-500"></i>
+                    <span class="font-medium text-sm tracking-wide uppercase">Farewell</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: PORTFOLIO SHOWCASE -->
+    <section id="portfolio" class="py-32 px-6 relative z-10">
+        <div class="container mx-auto max-w-7xl">
+            <div class="text-center mb-20 fade-in">
+                <span class="text-brand-gold font-medium tracking-[0.2em] uppercase text-xs mb-4 block">Our Gallery</span>
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-brand-text mb-8">Moments Crafted by Us</h2>
+                <a href="https://wa.me/919092922385" target="_blank" class="btn-whatsapp px-8">
+                    <i class="ph-fill ph-whatsapp-logo text-xl"></i> See more on WhatsApp
+                </a>
+            </div>
+
+            <!-- Masonry Gallery -->
+            <div class="masonry-grid fade-in">
+                <div class="masonry-item rounded-[2rem] overflow-hidden group cursor-pointer relative shadow-md hover:shadow-2xl transition-all duration-500" onclick="window.open('https://wa.me/919092922385')">
+                    <img src="images/IMG_20260509_144056.jpg" alt="Premium Satin Rose Bouquet" class="group-hover:scale-110 transition-transform duration-1000 ease-out">
+                    <div class="absolute inset-0 bg-brand-text/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <span class="text-white font-medium px-6 py-3 border border-white/50 rounded-full text-sm uppercase tracking-widest backdrop-blur-sm">Order Style</span>
+                    </div>
+                </div>
+                <div class="masonry-item rounded-[2rem] overflow-hidden group cursor-pointer relative shadow-md hover:shadow-2xl transition-all duration-500" onclick="window.open('https://wa.me/919092922385')">
+                    <img src="images/SAVE_20260509_144916.jpg" alt="Jewelry & Lifestyle Hamper" class="group-hover:scale-110 transition-transform duration-1000 ease-out">
+                    <div class="absolute inset-0 bg-brand-text/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <span class="text-white font-medium px-6 py-3 border border-white/50 rounded-full text-sm uppercase tracking-widest backdrop-blur-sm">Order Style</span>
+                    </div>
+                </div>
+                <div class="masonry-item rounded-[2rem] overflow-hidden group cursor-pointer relative shadow-md hover:shadow-2xl transition-all duration-500" onclick="window.open('https://wa.me/919092922385')">
+                    <img src="images/IMG-20260323-WA0218.jpg" alt="Chocolate & Treats Hamper" class="group-hover:scale-110 transition-transform duration-1000 ease-out">
+                    <div class="absolute inset-0 bg-brand-text/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <span class="text-white font-medium px-6 py-3 border border-white/50 rounded-full text-sm uppercase tracking-widest backdrop-blur-sm">Order Style</span>
+                    </div>
+                </div>
+                <div class="masonry-item rounded-[2rem] overflow-hidden group cursor-pointer relative shadow-md hover:shadow-2xl transition-all duration-500" onclick="window.open('https://wa.me/919092922385')">
+                    <img src="images/Screenshot_2026-05-09-14-30-54-261_com.instagram.android-edit.jpg" alt="Transparent Gift Bag" class="group-hover:scale-110 transition-transform duration-1000 ease-out">
+                    <div class="absolute inset-0 bg-brand-text/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <span class="text-white font-medium px-6 py-3 border border-white/50 rounded-full text-sm uppercase tracking-widest backdrop-blur-sm">Order Style</span>
+                    </div>
+                </div>
+                <div class="masonry-item rounded-[2rem] overflow-hidden group cursor-pointer relative shadow-md hover:shadow-2xl transition-all duration-500" onclick="window.open('https://wa.me/919092922385')">
+                    <img src="images/hijabi bouquet.jpeg" alt="Hijabi/Scarf Bouquet Collection" class="group-hover:scale-110 transition-transform duration-1000 ease-out">
+                    <div class="absolute inset-0 bg-brand-text/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <span class="text-white font-medium px-6 py-3 border border-white/50 rounded-full text-sm uppercase tracking-widest backdrop-blur-sm">Order Style</span>
+                    </div>
+                </div>
+                <div class="masonry-item rounded-[2rem] overflow-hidden group cursor-pointer relative shadow-md hover:shadow-2xl transition-all duration-500" onclick="window.open('https://wa.me/919092922385')">
+                    <img src="images/IMG_20260322_115018.png" alt="Classic Kraft Gift Box" class="group-hover:scale-110 transition-transform duration-1000 ease-out">
+                    <div class="absolute inset-0 bg-brand-text/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <span class="text-white font-medium px-6 py-3 border border-white/50 rounded-full text-sm uppercase tracking-widest backdrop-blur-sm">Order Style</span>
+                    </div>
+                </div>
+                <div class="masonry-item rounded-[2rem] overflow-hidden group cursor-pointer relative shadow-md hover:shadow-2xl transition-all duration-500" onclick="window.open('https://wa.me/919092922385')">
+                    <img src="images/IMG-20260318-WA0038.jpg" alt="Single Red Rose Artisan Bouquet" class="group-hover:scale-110 transition-transform duration-1000 ease-out">
+                    <div class="absolute inset-0 bg-brand-text/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <span class="text-white font-medium px-6 py-3 border border-white/50 rounded-full text-sm uppercase tracking-widest backdrop-blur-sm">Order Style</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: WHY CHOOSE GLOWVIA LANE -->
+    <section class="py-32 bg-brand-text text-brand-bg-primary relative z-10 overflow-hidden">
+        <div class="container mx-auto px-6 max-w-7xl relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-20">
+                <div class="w-full lg:w-1/2 fade-in">
+                    <span class="text-brand-gold font-medium tracking-[0.2em] uppercase text-xs mb-4 block">The Difference</span>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold mb-12 text-white">Why Choose Glowvia Lane?</h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <i class="ph-light ph-check-circle text-3xl text-brand-gold shrink-0"></i>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2 text-white font-heading">Handcrafted Gifts</h4>
+                                <p class="text-brand-bg-primary/60 text-sm font-light leading-loose">No assembly lines. Every item is hand-assembled with precision and absolute care.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <i class="ph-light ph-star text-3xl text-brand-gold shrink-0"></i>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2 text-white font-heading">Luxury Presentation</h4>
+                                <p class="text-brand-bg-primary/60 text-sm font-light leading-loose">We use premium ribbons, quality boxes, and stunning wraps that impress immediately.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <i class="ph-light ph-pencil-simple text-3xl text-brand-gold shrink-0"></i>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2 text-white font-heading">Fully Personalized</h4>
+                                <p class="text-brand-bg-primary/60 text-sm font-light leading-loose">Tailored strictly to your notes, ensuring high emotional impact for the receiver.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <i class="ph-light ph-diamond text-3xl text-brand-gold shrink-0"></i>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2 text-white font-heading">Premium Materials</h4>
+                                <p class="text-brand-bg-primary/60 text-sm font-light leading-loose">Only the finest ingredients, chocolates, and lifestyle keepsakes are included.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full lg:w-1/2 fade-in">
+                    <div class="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/5]">
+                        <div class="absolute inset-0 bg-brand-text/20 z-10 mix-blend-multiply"></div>
+                        <img src="images/SAVE_20260509_144916.jpg" alt="Premium Gifting" class="img-cover z-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: CUSTOMER REVIEWS -->
+    <section id="reviews" class="py-32 bg-brand-bg-secondary relative z-10 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20 fade-in">
+                <span class="text-brand-gold font-medium tracking-[0.2em] uppercase text-xs mb-4 block">Testimonials</span>
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-brand-text">Words of Love</h2>
+            </div>
+
+            <!-- Horizontal scrolling reviews -->
+            <div class="flex overflow-x-auto gap-8 pb-12 hide-scrollbar snap-x snap-mandatory fade-in">
+                <!-- Review 1 -->
+                <div class="card-premium p-10 md:p-12 min-w-[320px] md:min-w-[450px] snap-center bg-white border-0">
+                    <div class="flex text-brand-gold mb-6 text-2xl gap-1">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="text-brand-text/70 mb-8 italic leading-loose font-light text-lg">"The hamper I ordered for my best friend's wedding was beyond stunning. The attention to detail was incredible. She absolutely loved it!"</p>
+                    <div class="font-heading font-bold text-xl text-brand-text mb-1">Priya S.</div>
+                    <div class="text-xs tracking-widest uppercase text-brand-text/40 font-medium">Custom Wedding Hamper</div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="card-premium p-10 md:p-12 min-w-[320px] md:min-w-[450px] snap-center bg-white border-0">
+                    <div class="flex text-brand-gold mb-6 text-2xl gap-1">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="text-brand-text/70 mb-8 italic leading-loose font-light text-lg">"Glowvia Lane made gifting so easy. I just told them my budget and what my wife likes, and they crafted the perfect anniversary box."</p>
+                    <div class="font-heading font-bold text-xl text-brand-text mb-1">Rahul M.</div>
+                    <div class="text-xs tracking-widest uppercase text-brand-text/40 font-medium">Anniversary Gift Box</div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="card-premium p-10 md:p-12 min-w-[320px] md:min-w-[450px] snap-center bg-white border-0">
+                    <div class="flex text-brand-gold mb-6 text-2xl gap-1">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="text-brand-text/70 mb-8 italic leading-loose font-light text-lg">"The hijab bouquet was so unique and beautifully presented. It felt very premium and was definitely worth the price."</p>
+                    <div class="font-heading font-bold text-xl text-brand-text mb-1">Ayesha F.</div>
+                    <div class="text-xs tracking-widest uppercase text-brand-text/40 font-medium">Hijab Bouquet</div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4 fade-in">
+                <p class="text-brand-text/40 text-xs tracking-widest uppercase font-medium">Swipe to read more</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 11: INSTAGRAM SECTION -->
+    <section class="py-32 px-6 relative z-10">
+        <div class="container mx-auto max-w-7xl text-center">
+            <i class="ph-light ph-instagram-logo text-6xl text-brand-rose mb-6 inline-block fade-in"></i>
+            <h2 class="font-heading text-4xl font-bold text-brand-text mb-4 fade-in">Join Our Community</h2>
+            <p class="text-brand-text/60 font-light mb-16 fade-in">Follow <a href="#" class="text-brand-gold font-medium hover:underline">@glowvia.lane</a> for daily gifting inspiration.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16 fade-in">
+                <div class="aspect-square bg-brand-bg-secondary rounded-2xl overflow-hidden relative group shadow-sm">
+                    <img src="images/IMG_20260509_144056.jpg" alt="Instagram Post" class="img-cover group-hover:scale-110 transition-transform duration-1000 ease-out">
+                    <div class="absolute inset-0 bg-brand-text/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                        <i class="ph-fill ph-heart text-white text-3xl"></i>
+                    </div>
+                </div>
+                <div class="aspect-square bg-brand-bg-secondary rounded-2xl overflow-hidden relative group shadow-sm">
+                    <img src="images/IMG-20260323-WA0218.jpg" alt="Instagram Post" class="img-cover group-hover:scale-110 transition-transform duration-1000 ease-out">
+                    <div class="absolute inset-0 bg-brand-text/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                        <i class="ph-fill ph-heart text-white text-3xl"></i>
+                    </div>
+                </div>
+                <div class="aspect-square bg-brand-bg-secondary rounded-2xl overflow-hidden relative group shadow-sm">
+                    <img src="images/IMG_20260322_115018.png" alt="Instagram Post" class="img-cover group-hover:scale-110 transition-transform duration-1000 ease-out">
+                    <div class="absolute inset-0 bg-brand-text/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                        <i class="ph-fill ph-heart text-white text-3xl"></i>
+                    </div>
+                </div>
+                <div class="aspect-square bg-brand-bg-secondary rounded-2xl overflow-hidden relative group shadow-sm">
+                    <img src="images/SAVE_20260509_144916.jpg" alt="Instagram Post" class="img-cover group-hover:scale-110 transition-transform duration-1000 ease-out">
+                    <div class="absolute inset-0 bg-brand-text/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                        <i class="ph-fill ph-heart text-white text-3xl"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#" class="btn-outline px-10 py-4 text-sm tracking-widest uppercase fade-in">
+                Follow on Instagram
+            </a>
+        </div>
+    </section>
+
+    <!-- SECTION 12: FAQ -->
+    <section id="faq" class="py-32 bg-brand-bg-secondary relative z-10 border-t border-brand-gold/10">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <div class="text-center mb-20 fade-in">
+                <span class="text-brand-gold font-medium tracking-[0.2em] uppercase text-xs mb-4 block">Common Questions</span>
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-brand-text">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-6 fade-in">
+                <div class="card-premium p-8 bg-white border-0 shadow-sm">
+                    <h4 class="font-heading font-bold text-xl mb-3 text-brand-text">How do I place an order?</h4>
+                    <p class="text-brand-text/60 font-light text-sm leading-loose">Simply click any of the "WhatsApp" buttons on this page. Our team will chat with you to understand your requirements and process the order.</p>
+                </div>
+                
+                <div class="card-premium p-8 bg-white border-0 shadow-sm">
+                    <h4 class="font-heading font-bold text-xl mb-3 text-brand-text">Can everything be customized?</h4>
+                    <p class="text-brand-text/60 font-light text-sm leading-loose">Yes! We specialize in 100% customization. From the contents and colors to the specific handwritten notes inside.</p>
+                </div>
+                
+                <div class="card-premium p-8 bg-white border-0 shadow-sm">
+                    <h4 class="font-heading font-bold text-xl mb-3 text-brand-text">Do you deliver across India?</h4>
+                    <p class="text-brand-text/60 font-light text-sm leading-loose">Yes, we provide safe and secure Pan India delivery. Shipping timelines vary based on location.</p>
+                </div>
+                
+                <div class="card-premium p-8 bg-white border-0 shadow-sm">
+                    <h4 class="font-heading font-bold text-xl mb-3 text-brand-text">What is the minimum budget?</h4>
+                    <p class="text-brand-text/60 font-light text-sm leading-loose">We try to accommodate various budgets while maintaining our premium quality standard. Message us with your budget, and we'll suggest the best options.</p>
+                </div>
+                
+                <div class="card-premium p-8 bg-white border-0 shadow-sm">
+                    <h4 class="font-heading font-bold text-xl mb-3 text-brand-text">How long does preparation take?</h4>
+                    <p class="text-brand-text/60 font-light text-sm leading-loose">Depending on the customization level, crafting usually takes 2-4 days before dispatch. We recommend ordering at least a week in advance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 13: FINAL CTA -->
+    <section class="py-40 relative z-10 overflow-hidden bg-brand-rose text-white text-center">
+        <!-- Decorative bg -->
+        <div class="absolute inset-0 opacity-10 bg-[url('images/IMG-20260318-WA0038.jpg')] bg-cover bg-center mix-blend-overlay"></div>
+        
+        <div class="container mx-auto px-6 relative z-10 fade-in">
+            <h2 class="font-heading text-5xl md:text-6xl font-bold mb-8">Ready To Create Something Special?</h2>
+            <p class="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-12 text-balance font-light leading-loose">
+                Let's make their day unforgettable. Reach out to us directly, and we’ll help you design the perfect gift.
+            </p>
+            <a href="https://wa.me/919092922385" target="_blank" class="btn-whatsapp px-12 py-5 text-lg shadow-2xl hover:scale-105">
+                <i class="ph-fill ph-whatsapp-logo text-3xl"></i> Chat On WhatsApp
+            </a>
+            <p class="mt-8 text-xs tracking-widest uppercase text-white/60 font-medium">Fast replies • Free consultation</p>
+        </div>
+    </section>
+
+    <!-- SECTION 14: FOOTER -->
+    <footer id="contact" class="bg-brand-text text-brand-bg-primary pt-24 pb-12 relative z-10">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+                <!-- Brand Info -->
+                <div class="col-span-1 lg:col-span-1">
+                    <img src="logo.png" alt="Glowvia Lane Logo" class="h-14 mb-8 brightness-0 invert opacity-90">
+                    <p class="text-brand-bg-primary/60 text-sm leading-loose font-light">
+                        Premium personalized gifting brand. We craft bespoke hampers, gift boxes, and artisan bouquets tailored to your vision and budget.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-heading font-bold text-xl mb-8 text-brand-gold">Quick Links</h4>
+                    <ul class="space-y-4 text-sm text-brand-bg-primary/60 font-light">
+                        <li><a href="#home" class="hover:text-brand-gold transition-colors">Home</a></li>
+                        <li><a href="#our-story" class="hover:text-brand-gold transition-colors">Our Story</a></li>
+                        <li><a href="#portfolio" class="hover:text-brand-gold transition-colors">Portfolio</a></li>
+                        <li><a href="#faq" class="hover:text-brand-gold transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-heading font-bold text-xl mb-8 text-brand-gold">Contact Us</h4>
+                    <ul class="space-y-5 text-sm text-brand-bg-primary/60 font-light">
+                        <li>
+                            <a href="https://wa.me/919092922385" target="_blank" class="flex items-center gap-4 hover:text-brand-gold transition-colors">
+                                <i class="ph-light ph-whatsapp-logo text-2xl"></i> Chat on WhatsApp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:hello.glowvialane@gmail.com" class="flex items-center gap-4 hover:text-brand-gold transition-colors">
+                                <i class="ph-light ph-envelope-simple text-2xl"></i> hello.glowvialane@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Socials -->
+                <div>
+                    <h4 class="font-heading font-bold text-xl mb-8 text-brand-gold">Follow Us</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-12 h-12 rounded-full bg-brand-bg-primary/5 flex items-center justify-center hover:bg-brand-gold transition-colors text-brand-bg-primary hover:text-brand-text">
+                            <i class="ph-fill ph-instagram-logo text-xl"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-brand-bg-primary/5 flex items-center justify-center hover:bg-brand-gold transition-colors text-brand-bg-primary hover:text-brand-text">
+                            <i class="ph-fill ph-facebook-logo text-xl"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-brand-bg-primary/5 flex items-center justify-center hover:bg-brand-gold transition-colors text-brand-bg-primary hover:text-brand-text">
+                            <i class="ph-fill ph-pinterest-logo text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8 border-t border-brand-bg-primary/10 text-center text-xs text-brand-bg-primary/40 flex flex-col md:flex-row justify-between items-center gap-4 tracking-widest uppercase">
+                <p>&copy; <span id="current-year"></span> Glowvia Lane. All rights reserved.</p>
+                <p>Designed for premium gifting experiences.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
