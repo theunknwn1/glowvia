@@ -30,30 +30,37 @@
 
     <!-- SECTION 1: NAVBAR -->
     <header id="navbar" class="fixed w-full top-0 z-50 py-3 transition-all duration-300">
-        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
-            <a href="#" class="flex items-center gap-2 z-50">
-                <img src="logo.png" alt="Glowvia Lane" class="h-14 md:h-20 w-auto object-contain drop-shadow-sm">
-            </a>
+        <div class="container mx-auto px-6 md:px-12 grid grid-cols-2 lg:grid-cols-3 items-center">
+            
+            <!-- Left: Logo -->
+            <div class="flex justify-start z-50">
+                <a href="#" class="flex items-center gap-2">
+                    <img src="logo.png" alt="Glowvia Lane" class="h-[58px] md:h-[83px] w-auto object-contain drop-shadow-sm">
+                </a>
+            </div>
 
-            <!-- Desktop Menu -->
-            <nav class="hidden lg:flex items-center gap-10 font-semibold text-[15px] tracking-wide text-brand-text/90 z-50">
+            <!-- Center: Desktop Menu -->
+            <nav class="hidden lg:flex justify-center items-center gap-10 font-semibold text-[15px] tracking-wide text-brand-text/90 z-50 -translate-x-4">
                 <a href="#about" class="hover:text-brand-gold transition-colors">About</a>
                 <a href="#creations" class="hover:text-brand-gold transition-colors">Creations</a>
                 <a href="#portfolio" class="hover:text-brand-gold transition-colors">Portfolio</a>
                 <a href="#instagram" class="hover:text-brand-gold transition-colors">Instagram</a>
             </nav>
 
-            <div class="hidden lg:block z-50">
-                <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D"
-                    target="_blank" rel="noopener noreferrer" class="btn-whatsapp px-8 py-3 text-sm">
-                    <i class="ph-fill ph-whatsapp-logo text-xl"></i> WhatsApp Us
-                </a>
+            <!-- Right: WhatsApp Button & Mobile Toggle -->
+            <div class="flex justify-end items-center z-50">
+                <div class="hidden lg:block">
+                    <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8"
+                        target="_blank" rel="noopener noreferrer" class="btn-whatsapp px-8 py-3 text-sm">
+                        <i class="ph-fill ph-whatsapp-logo text-xl"></i> WhatsApp Us
+                    </a>
+                </div>
+                <!-- Mobile Toggle -->
+                <button id="mobile-menu-btn" class="lg:hidden text-2xl p-2 text-brand-text">
+                    <i class="ph ph-list"></i>
+                </button>
             </div>
-
-            <!-- Mobile Toggle -->
-            <button id="mobile-menu-btn" class="lg:hidden text-2xl z-50 p-2 text-brand-text">
-                <i class="ph ph-list"></i>
-            </button>
+            
         </div>
 
         <!-- Mobile Menu -->
@@ -63,7 +70,7 @@
             <a href="#creations" class="hover:text-brand-gold transition-colors">Creations</a>
             <a href="#portfolio" class="hover:text-brand-gold transition-colors">Portfolio</a>
             <a href="#instagram" class="hover:text-brand-gold transition-colors">Instagram</a>
-            <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D"
+            <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8"
                 target="_blank" class="btn-whatsapp mt-8 px-10 py-4 text-base">
                 <i class="ph-fill ph-whatsapp-logo text-2xl"></i> Chat on WhatsApp
             </a>
@@ -72,14 +79,14 @@
 
     <!-- Floating Sticky CTA -->
     <div class="sticky-bottom-bar md:hidden fixed bottom-0 left-0 w-full z-[100] bg-white border-t border-brand-gold/20 p-4 shadow-[0_-10px_20px_rgba(0,0,0,0.05)]">
-        <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D"
+        <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8"
             target="_blank" class="btn-whatsapp w-full flex justify-center text-base py-3">
             <i class="ph-fill ph-whatsapp-logo text-2xl"></i> Chat to Order
         </a>
     </div>
     
     <!-- Floating Sticky CTA (Desktop) -->
-    <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D"
+    <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8"
         target="_blank" class="floating-whatsapp hidden md:flex" aria-label="Chat on WhatsApp">
         <i class="ph-fill ph-whatsapp-logo"></i>
     </a>
@@ -104,7 +111,7 @@
                     </p>
 
                     <div class="flex flex-wrap gap-5 w-full sm:w-auto mb-10">
-                        <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D"
+                        <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8"
                             target="_blank" class="btn-whatsapp w-full sm:w-auto text-base px-8">
                             <i class="ph-fill ph-whatsapp-logo text-2xl"></i> Order Your Gift Now
                         </a>
@@ -170,7 +177,7 @@
                         vision. From elegant artisan bouquets to bespoke hampers, every creation is hand-assembled with
                         precision, premium materials, and undeniable love.
                     </p>
-                    <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D"
+                    <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8"
                         target="_blank"
                         class="text-brand-rose font-medium uppercase tracking-widest text-sm hover:text-brand-text transition-colors flex items-center gap-3">
                         Talk to our designer <i class="ph ph-arrow-right text-lg"></i>
@@ -186,9 +193,9 @@
             <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 fade-in">
                 <div>
                     <span class="text-brand-gold font-medium tracking-[0.2em] uppercase text-xs mb-4 block">Most Loved</span>
-                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-brand-text">Our Best-Selling Custom Gifts</h2>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-brand-text">Featured Creations</h2>
                 </div>
-                <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D"
+                <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8"
                     target="_blank"
                     class="hidden md:inline-flex text-brand-text font-medium uppercase tracking-widest text-xs hover:text-brand-rose transition-colors items-center gap-3">
                     Request custom creation <i class="ph ph-arrow-right text-lg"></i>
@@ -198,7 +205,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
                 <!-- Custom Hampers -->
                 <div class="group fade-in cursor-pointer hover:-translate-y-2 transition-all duration-500"
-                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D')">
+                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8')">
                     <div
                         class="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-md group-hover:shadow-2xl mb-6 transition-all duration-500">
                         <img src="images/IMG-20260323-WA0218.jpg" alt="Custom Hamper"
@@ -223,7 +230,7 @@
                 <!-- Gift Boxes -->
                 <div class="group fade-in cursor-pointer hover:-translate-y-2 transition-all duration-500"
                     style="transition-delay: 100ms;"
-                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D')">
+                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8')">
                     <div
                         class="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-md group-hover:shadow-2xl mb-6 transition-all duration-500">
                         <img src="images/IMG_20260322_115018.png" alt="Gift Box"
@@ -248,7 +255,7 @@
                 <!-- Bouquets -->
                 <div class="group fade-in cursor-pointer hover:-translate-y-2 transition-all duration-500"
                     style="transition-delay: 200ms;"
-                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D')">
+                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8')">
                     <div
                         class="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-md group-hover:shadow-2xl mb-6 transition-all duration-500">
                         <img src="images/IMG-20260318-WA0038.jpg" alt="Premium Bouquet"
@@ -278,7 +285,7 @@
         <div class="container mx-auto max-w-7xl">
             <div class="text-center mb-16 fade-in">
                 <h2 class="font-heading text-4xl md:text-5xl font-bold text-brand-text mb-6">Moments Crafted by Us</h2>
-                <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D"
+                <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8"
                     target="_blank" class="btn-whatsapp px-8">
                     <i class="ph-fill ph-whatsapp-logo text-xl"></i> See more on WhatsApp
                 </a>
@@ -287,7 +294,7 @@
             <!-- Premium Masonry Gallery with reduced padding -->
             <div class="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4 fade-in">
                 <div class="break-inside-avoid rounded-[1.5rem] overflow-hidden group cursor-pointer relative shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-500"
-                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D')">
+                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8')">
                     <img src="images/SAVE_20260509_144916.jpg" alt="Jewelry & Lifestyle Hamper"
                         class="w-full h-auto group-hover:scale-105 transition-transform duration-1000 ease-out">
                     <div
@@ -298,7 +305,7 @@
                     </div>
                 </div>
                 <div class="break-inside-avoid rounded-[1.5rem] overflow-hidden group cursor-pointer relative shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-500"
-                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D')">
+                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8')">
                     <img src="images/hijabi bouquet.jpeg" alt="Hijabi/Scarf Bouquet Collection"
                         class="w-full h-auto group-hover:scale-105 transition-transform duration-1000 ease-out">
                     <div
@@ -309,7 +316,7 @@
                     </div>
                 </div>
                 <div class="break-inside-avoid rounded-[1.5rem] overflow-hidden group cursor-pointer relative shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-500"
-                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D')">
+                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8')">
                     <img src="images/IMG-20260318-WA0038.jpg" alt="Single Red Rose Artisan Bouquet"
                         class="w-full h-auto group-hover:scale-105 transition-transform duration-1000 ease-out">
                     <div
@@ -320,7 +327,7 @@
                     </div>
                 </div>
                 <div class="break-inside-avoid rounded-[1.5rem] overflow-hidden group cursor-pointer relative shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-500"
-                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D')">
+                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8')">
                     <img src="images/IMG_20260322_115018.png" alt="Classic Kraft Gift Box"
                         class="w-full h-auto group-hover:scale-105 transition-transform duration-1000 ease-out">
                     <div
@@ -331,7 +338,7 @@
                     </div>
                 </div>
                 <div class="break-inside-avoid rounded-[1.5rem] overflow-hidden group cursor-pointer relative shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-500"
-                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D')">
+                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8')">
                     <img src="images/IMG-20260323-WA0218.jpg" alt="Chocolate & Treats Hamper"
                         class="w-full h-auto group-hover:scale-105 transition-transform duration-1000 ease-out">
                     <div
@@ -342,7 +349,7 @@
                     </div>
                 </div>
                 <div class="break-inside-avoid rounded-[1.5rem] overflow-hidden group cursor-pointer relative shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-500"
-                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D')">
+                    onclick="window.open('https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8')">
                     <img src="images/IMG_20260509_144056.jpg" alt="Premium Satin Rose Bouquet"
                         class="w-full h-auto group-hover:scale-105 transition-transform duration-1000 ease-out">
                     <div
@@ -426,7 +433,7 @@
             <p class="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 text-balance font-light leading-loose">
                 Share your occasion and budget, and let us handle the rest. Secure your delivery date now.
             </p>
-            <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D"
+            <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8"
                 target="_blank" class="btn-whatsapp px-12 py-5 text-lg shadow-2xl hover:scale-105">
                 <i class="ph-fill ph-whatsapp-logo text-3xl"></i> Book on WhatsApp
             </a>
@@ -478,7 +485,7 @@
                     <h4 class="font-heading font-bold text-xl mb-8 text-brand-gold">Contact Us</h4>
                     <ul class="space-y-5 text-sm text-brand-bg-primary/60 font-light">
                         <li>
-                            <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%8C%B7%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%20%F0%9F%92%9D"
+                            <a href="https://wa.me/919092922385?text=Hi%20Glowvia%20Lane%20%F0%9F%98%8A%0A%0AI%20would%20like%20to%20place%20an%20order.%0A%0AOccasion%3A%0ABudget%3A%0ADelivery%20Date%3A%0AGift%20Type%3A%0ACustomization%20Needed%3A%0A%0APlease%20share%20available%20options.%20Thank%20you%E2%9C%A8"
                                 target="_blank"
                                 class="group flex items-center gap-4 hover:-translate-y-0.5 hover:text-brand-gold transition-all duration-300 w-max">
                                 <i
